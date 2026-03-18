@@ -1,0 +1,45 @@
+/* Estilos básicos del blog */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+  color: #222;
+}
+header, nav, section, article, aside, footer {
+  padding: 1rem;
+}
+header {
+  background: #0f4c81;
+  color: white;
+}
+nav {
+  background: #1f7ec8;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li { margin-right: 1rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main { 
+    display: grid;
+    gap: 1rem; 
+    max-width: 1200px;
+     margin: auto; }
+article { background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+img { max-width: 100%; border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+th, td { border: 1px solid #bbb; padding: 0.5rem; text-align: left; }
+caption { font-weight: bold; margin-bottom: 0.5rem; }
+footer { background: #0f4c81; color: white; text-align: center; }
+form { display: grid; gap: 0.75rem; background: #fff; border-radius: 8px; padding: 1rem; }
+input, select, textarea { width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; }
+button { background: #0f4c81; color: white; border: 0; padding: 0.6rem 1rem; border-radius: 5px; cursor: pointer; }
+.img01 { max-width: 30%; height: auto; }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro/Login | Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Registro e Ingreso</h1>
+    <p>Formulario de datos personales y de contacto.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="tecnologia.html">Tecnología</a></li>
+      <li><a href="videojuegos.html">Videojuegos</a></li>
+      <li><a href="ia.html">IA</a></li>
+      <li><a href="deportes.html">Deportes</a></li>
+      <li><a href="formulario.html">Registro/Login</a></li>
+    </ul>
+  </nav>
+  <main>
+    <article>
+      <h2>Registro de usuario</h2>
+      <form action="#" method="post">
+        <label>Nombre completo<input type="text" name="nombre" required></label>
+        <label>Tipo de identificación
+          <select name="tipo_id">
+            <option value="TI">TI</option>
+            <option value="dni">CD</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+        <label>Número de identificación<input type="text" name="numero_id" required></label>
+        <label>Correo electrónico<input type="email" name="email" required></label>
+        <label>Teléfono<input type="tel" name="telefono"></label>
+        <label>Dirección<input type="text" name="direccion"></label>
+        <label>Fecha de nacimiento<input type="date" name="fecha_nacimiento"></label>
+        <label>Edad<input type="number" name="edad" min="1" max="120"></label>
+        <label>Género
+          <input type="radio" name="genero" value="f"> Femenino
+          <input type="radio" name="genero" value="m"> Masculino
+          <input type="radio" name="genero" value="o"> Otro
+        </label>
+        <label>Preferencias
+          <input type="checkbox" name="pref_tecnologia"> Tecnología
+          <input type="checkbox" name="pref_videojuegos"> Videojuegos
+          <input type="checkbox" name="pref_deportes"> Deportes
+        </label>
+        <label>Ocupación<input type="text" name="ocupacion"></label>
+        <label>Comentarios<textarea name="comentarios" rows="4"></textarea></label>
+        <button type="submit">Enviar</button>
+      </form>
+    </article>
+    <article>
+      <h3>Ingreso</h3>
+      <form action="#" method="post">
+        <label>Correo electrónico<input type="email" name="email_login" required></label>
+        <label>Contraseña<input type="password" name="password" required></label>
+        <button type="submit">Entrar</button>
+      </form>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2026 Blog - Formulario</p>
+  </footer>
+</body>
+</html>
