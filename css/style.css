@@ -59,8 +59,12 @@ th{
     background-color: rgb(96, 96, 117);
 }
 tr:hover{
-    background-color:rgb(91, 91, 97) ;
+    background-color:rgb(13, 13, 62) ;
     cursor: pointer;
+}
+
+tr:nth-child(even){
+    background-color: rgb(47, 45, 45);
 }
 caption { 
   font-weight: bold; 
